@@ -1,19 +1,20 @@
-[build]
-  # Base directory for the frontend
-  base = "frontend"
-  
-  # Build command runs from the base directory
-  command = "npm install && npm run build"
-  
-  # IMPORTANT: Do NOT set publish directory for Next.js plugin
-  # The @netlify/plugin-nextjs plugin handles this automatically
-  # Leaving it unset prevents the "base = publish" error
+# Netlify configuration for Next.js
+# IMPORTANT: Set these in Netlify Dashboard (Site settings → Build & deploy):
+#   - Base directory: frontend
+#   - Publish directory: (leave EMPTY - Next.js plugin handles it automatically)
+#   - Build command: npm install && npm run build
 
-# Next.js plugin configuration (handles publish directory automatically)
+[build]
+  # Build command (runs from base directory set in dashboard)
+  command = "npm install && npm run build"
+  # NOTE: Do NOT set 'base' or 'publish' here - configure in dashboard instead
+
+# Next.js plugin - automatically handles publish directory
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Environment variables - set these in Netlify Dashboard under Site settings > Environment variables
+# Environment variables - set these in Netlify Dashboard:
+# Site settings → Environment variables
 # - NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
 # - NEXT_PUBLIC_SUPADEMO_EMBED_URL (optional)
 
@@ -22,4 +23,3 @@
   NODE_VERSION = "20"
 
 # Redirect rules are handled automatically by Next.js plugin
-
