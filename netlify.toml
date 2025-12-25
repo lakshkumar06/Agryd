@@ -1,12 +1,11 @@
 # Netlify configuration for Next.js
 # Base directory: frontend (where Next.js project lives)
-# Publish directory: .next (relative to base, handled by Next.js plugin)
+# Publish directory: .next (relative to base directory)
 
 [build]
   base = "frontend"
+  publish = ".next"
   command = "npm install && npm run build"
-  # Publish directory is handled automatically by @netlify/plugin-nextjs
-  # Do NOT set publish here - the plugin manages it
 
 # Next.js plugin - automatically handles publish directory
 [[plugins]]
@@ -23,4 +22,3 @@
   NODE_VERSION = "20"
   SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,NEXT_PUBLIC_SUPADEMO_EMBED_URL"
 
-# Redirect rules are handled automatically by Next.js plugin
