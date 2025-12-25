@@ -1,0 +1,26 @@
+# Netlify configuration for Next.js
+# NOTE: Configure these in Netlify Dashboard (Build & deploy settings):
+#   - Base directory: frontend
+#   - Publish directory: (leave EMPTY)
+#   - Build command: npm install && npm run build
+
+[build]
+  command = "npm install && npm run build"
+  # NOTE: Do NOT set 'base' or 'publish' here - configure in dashboard instead
+
+# Next.js plugin - automatically handles publish directory
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Environment variables - set these in Netlify Dashboard:
+# Site settings → Environment variables
+# - NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY (mark as Secret)
+# - NEXT_PUBLIC_SUPADEMO_EMBED_URL (mark as Secret, optional)
+
+# Omit NEXT_PUBLIC_* variables from secrets scanning
+# These are intentionally public and embedded in client-side code
+[build.environment]
+  NODE_VERSION = "20"
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY,NEXT_PUBLIC_SUPADEMO_EMBED_URL"
+
+# Redirect rules are handled automatically by Next.js plugin
