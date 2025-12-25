@@ -1,12 +1,13 @@
 # Netlify configuration for Next.js
-# NOTE: Configure these in Netlify Dashboard (Build & deploy settings):
+# IMPORTANT: Configure these in Netlify Dashboard (Site settings → Build & deploy):
 #   - Base directory: frontend
-#   - Publish directory: (leave EMPTY)
+#   - Publish directory: MUST BE EMPTY/BLANK (do not set to "frontend" or anything else)
 #   - Build command: npm install && npm run build
 
 [build]
   command = "npm install && npm run build"
-  # NOTE: Do NOT set 'base' or 'publish' here - configure in dashboard instead
+  # NOTE: Do NOT set 'base' or 'publish' in this file - only configure in dashboard
+  # The Next.js plugin will fail if base = publish, so keep publish empty in dashboard
 
 # Next.js plugin - automatically handles publish directory
 [[plugins]]
