@@ -1,0 +1,9 @@
+# Netlify redirects file
+# Uncomment and customize as needed
+
+# Redirect all 404s to index (uncomment if needed)
+# /*    /index.html   200
+
+# Example: Redirect old path to new path
+# /old-path    /new-path    301
+
