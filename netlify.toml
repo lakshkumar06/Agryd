@@ -2,13 +2,14 @@
   # Base directory for the frontend
   base = "frontend"
   
-  # Build command for Next.js
+  # Build command runs from the base directory
   command = "npm install && npm run build"
   
-  # Publish directory (handled automatically by Netlify Next.js plugin)
-  # No need to specify, plugin handles it
+  # IMPORTANT: Do NOT set publish directory for Next.js plugin
+  # The @netlify/plugin-nextjs plugin handles this automatically
+  # Leaving it unset prevents the "base = publish" error
 
-# Next.js plugin configuration (auto-detected, but explicit is better)
+# Next.js plugin configuration (handles publish directory automatically)
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
