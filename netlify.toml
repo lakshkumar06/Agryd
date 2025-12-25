@@ -1,0 +1,24 @@
+[build]
+  # Base directory for the frontend
+  base = "frontend"
+  
+  # Build command for Next.js
+  command = "npm install && npm run build"
+  
+  # Publish directory (handled automatically by Netlify Next.js plugin)
+  # No need to specify, plugin handles it
+
+# Next.js plugin configuration (auto-detected, but explicit is better)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Environment variables - set these in Netlify Dashboard under Site settings > Environment variables
+# - NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+# - NEXT_PUBLIC_SUPADEMO_EMBED_URL (optional)
+
+# Node version (recommended for Next.js 16)
+[build.environment]
+  NODE_VERSION = "20"
+
+# Redirect rules are handled automatically by Next.js plugin
+
