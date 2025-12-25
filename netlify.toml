@@ -1,11 +1,11 @@
 # Netlify configuration for Next.js
 # Base directory: frontend (where Next.js project lives)
-# Publish directory: .next (relative to base directory)
+# Publish directory: handled automatically by @netlify/plugin-nextjs
 
 [build]
   base = "frontend"
   publish = ".next"
-  command = "npm install && npm run build"
+  command = "npm ci && npm run build"
 
 # Next.js plugin - automatically handles publish directory
 [[plugins]]
