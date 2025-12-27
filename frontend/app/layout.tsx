@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 const siteUrl = "https://agryd.xyz";
+const ogImage = "https://agryd.xyz/og-imagev2.png";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
       "Stop chasing documents and start closing deals. Streamline workflows with version control, on-chain verification, and milestone-based escrow for trust-minimized deal execution.",
     images: [
       {
-        url: `/og-image.png`,
+        url: `/og-imagev2.png`,
         width: 1200,
         height: 630,
         alt: "Agryd",
@@ -59,12 +60,12 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@Agryd_xyz",
+    creator: "@Agryd_xyz",
     title: "Agryd",
     description:
       "Stop chasing documents and start closing deals. Streamline workflows with version control, on-chain verification, and milestone-based escrow for trust-minimized deal execution.",
-    images: [`/og-image.png`],
-    creator: "@agryd",
-    site: "@agryd",
+    images: ["https://agryd.xyz/og-imagev2.png"],
   },
   alternates: {
     canonical: siteUrl,
