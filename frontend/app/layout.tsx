@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: "%s - Agryd",
   },
   description:
-    "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
+    "Stop chasing documents and start closing deals. Streamline workflows with version control, on-chain verification, and milestone-based escrow for trust-minimized deal execution.",
   keywords: [
     "contract management",
     "contract workflow",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     siteName: "Agryd",
     title: "Agryd",
     description:
-      "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
+      "Stop chasing documents and start closing deals. Streamline workflows with version control, on-chain verification, and milestone-based escrow for trust-minimized deal execution.",
     images: [
       {
         url: `/og-image.png`,
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Agryd",
     description:
-      "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
+      "Stop chasing documents and start closing deals. Streamline workflows with version control, on-chain verification, and milestone-based escrow for trust-minimized deal execution.",
     images: [`/og-image.png`],
     creator: "@agryd",
     site: "@agryd",
@@ -87,7 +87,7 @@ export default function RootLayout({
     name: "Agryd",
     applicationCategory: "BusinessApplication",
     description:
-      "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
+      "Stop chasing documents and start closing deals. Streamline workflows with version control, on-chain verification, and milestone-based escrow for trust-minimized deal execution.",
     url: siteUrl,
     offers: {
       "@type": "Offer",
