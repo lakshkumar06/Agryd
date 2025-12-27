@@ -45,24 +45,24 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Agryd",
-    title: "Agryd",
+    title: "Agryd - Contract Management Platform",
     description:
       "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
     images: [
       {
-        url: "/og-image.png",
+        url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: "Agryd",
+        alt: "Agryd - Contract Management Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agryd",
+    title: "Agryd - Contract Management Platform",
     description:
       "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
-    images: ["/og-image.png"],
+    images: [`${siteUrl}/og-image.png`],
     creator: "@agryd",
     site: "@agryd",
   },
