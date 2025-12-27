@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "Agryd",
-    title: "Agryd - Contract Management Platform",
+    title: "Agryd",
     description:
       "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
     images: [
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Agryd - Contract Management Platform",
+        alt: "Agryd",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Agryd - Contract Management Platform",
+    title: "Agryd",
     description:
       "The workspace where teams can stop chasing documents and start closing deals. Streamline contract workflows with version control and integrated payments.",
     images: ["/og-image.png"],
