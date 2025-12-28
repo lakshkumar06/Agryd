@@ -269,7 +269,7 @@ export default function Home() {
           </p>
           <div className="text-center sm:text-left">
             <Link href="/demo" className="inline-block px-8 py-3 sm:py-4 bg-[#0C0C0C] hover:bg-[#1F1F1F] text-white text-md md:text-lg font-medium rounded-xl transition-colors">
-              w\Watch Demo
+              Watch Demo
             </Link>
           </div>
         </div>
